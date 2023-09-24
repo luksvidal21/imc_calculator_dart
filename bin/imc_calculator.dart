@@ -1,9 +1,12 @@
-import 'dart:math';
+import 'package:imc_calculator/functions/calcula_imc_funtion.dart';
 
-import 'package:imc_calculator/model/pessoa.dart';
+void main() async {
+  print(
+      "\n\nOlá! Vamos calcular seu IMC.\nNecessitamos que você responda as informações que aparecerão na tela:");
+  await Future.delayed(Duration(seconds: 3));
+  var dados = pegaDados();
+  var resultado = calculaIMC(dados);
+  print(resultado);
 
-void main(List<String> arguments) {
-  var pessoa = Pessoa("Lucas", 100, 1.88);
-  double calculoImcPessoa = pessoa.peso / pow(pessoa.altura, 2);
-  print(calculoImcPessoa.roundToDouble());
+  print("\n\nObrigado por ter participado!");
 }
