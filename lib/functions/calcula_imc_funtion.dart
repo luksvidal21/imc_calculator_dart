@@ -11,13 +11,11 @@ Pessoa pegaDados() {
   print("Qual o seu Peso?");
   double peso = double.parse(stdin.readLineSync()!);
   Pessoa pessoa = Pessoa(nome, altura, peso);
-
-  print("peso: $peso,altura: $altura");
   return pessoa;
 }
 
 String calculaIMC(Pessoa pessoa) {
-  double calculoImcPessoa = pessoa.peso / pow(pessoa.altura, 2);
+  double calculoImcPessoa = pessoa.altura / pow(pessoa.peso, 2);
   print(calculoImcPessoa);
   String? resultadoFinal;
   if (calculoImcPessoa < 18.5) {
