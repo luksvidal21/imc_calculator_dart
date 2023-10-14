@@ -1,5 +1,4 @@
 import "dart:io";
-import "dart:math";
 
 import "../model/pessoa.dart";
 
@@ -8,7 +7,7 @@ Future<Pessoa> pegaDados() async {
   String nome = stdin.readLineSync()!;
   await Future.delayed(Duration(seconds: 1));
   print(
-      "Qual a sua Altura?(Em cm. Ex: 182. Caso queira representar 1 metro e 80cm)");
+      "Qual a sua Altura?(Em cm. Ex: 182. Caso queira representar 1 metro e 82cm)");
   double altura = double.parse(stdin.readLineSync()!);
   await Future.delayed(Duration(seconds: 1));
   print("Qual o seu Peso?(Em Kg)");
