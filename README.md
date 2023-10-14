@@ -1,2 +1,2 @@
-A sample command-line application with an entrypoint in `bin/`, library code
-in `lib/`, and example unit test in `test/`.
+# Calculadora de IMC 
+## Projeto de calculadora IMC com a linguagem dart feito em linha de comando como desafio do Bootcamp Santander Mobile 
